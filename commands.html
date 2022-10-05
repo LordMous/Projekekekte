@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Python bemutató - Parancsok</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <img class="pythonlogo" src="./img/python-logo.png" alt="">
+            <h2 class="m-0"><i class="fa text-primary me-2"></i>PYTHON bemutató</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Kezdőlap</a>
+                <a href="history.html" class="nav-item nav-link">Alapok</a>
+                <a href="commands.html" class="nav-item nav-link">Parancsok</a>
+                <a href="contact.html" class="nav-item nav-link">Kontakt</a>
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Kezdjünk bele<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Python parancsok</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Kezdőlap</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Oldalak</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Parancsok</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase mb-2">Parancsot keresel?</h6>
+                <h1 class="display-6 mb-4">Itt megtalálod az összeset ABC sorrendben!</h1>
+            </div>
+
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">[] – egy nyitó és egy záró szögletes zárójel, listát lehet vele megadni.</h5>
+            <small></small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">{} – egy nyitó és egy záró kapcsos zárójel, szótárat lehet vele megadni.</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">abs() – megadja a zárójelben lévő szám abszolút értékét.</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">and – if vagy elif után, illetve a while-ciklus feltételei között szerepelhet, és azt lehet vele kikötni, hogy a két oldalán megadott két feltételnek egyszerre kell teljesülnie. Magyarul: és. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">append() – nem önálló parancs, hanem a lista adattípus tagfüggvénye. Magyarul: hozzáfűz. Listához tudunk vele új elemet hozzáfűzni. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">bool, bool() – Az első szó egy adattípus, a Boolean neve a Pythonban. A szó jelentése Bool-i, de magyarra “logikai” változóként fordítjuk. Értéke True (igaz), vagy False (hamis) lehet. A második egy függvény, ami logikai értékké alakítja azt,</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">break – arra való, hogy kilépjünk egy ciklusból, még mielőtt az végigfutna. Magyarul: megszakítás. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">
+                close() – nem önálló parancs, hanem a fájl típus tagfüggvénye. Megnyitott fájl bezárására való. Magyarul: bezár. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">count() – nem önálló parancs, hanem a lista adattípus tagfüggvénye. Magyarul: megszámol. Megmondja, hogy a zárójelben szereplő elem hányszor fordul elő a listában. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">dict() – szótár létrehozására szolgál. A dictionary szóból származik, ami szótárat jelent. A dictionary szó kiejtéséhez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">enumerate – a for-ciklusokban használható, ha egyszerre akarunk számlálós és bejárós ciklust. Magyarul körülbelül: számozott listába szed, felsorol. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">def – függvényt lehet vele megadni, azaz definiálni. Nem is azt jelenti, hogy deaf, azaz süket, sem azt, hogy def, azaz klassz, hanem a define, magyarul: definiál szó rövidítése. Így ejtjük (mint a süketet), de valójában erről a szóról van szó.</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">elif – elágazáskor a további (az if-ág nem-teljesülése esetén még megvizsgálandó) feltételeket vezeti be. Az else és az if szó összevonásából született meg, ilyen angol szó nincs. Ha programkódot olvasol, akkor az elif olvasása “különben, ha”</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">else – elágazáskor az utolsó ágat vezeti be, amely akkor fut le, ha egyik korábbi ág feltétele sem teljesült. Magyarul: különben. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">extend() – nem önálló parancs, hanem a lista adattípus tagfüggvénye. Magyarul: bővít. Egy listával bővíti az eredeti listát: az új listát a régi végére biggyeszti. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">False – a bool adattípus egyik lehetséges értéke. Magyarul: hamis. Kiejtéshez kattints! Mindig nagy betűvel kezdjük.</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">float, float() – Az első szó egy adattípus, a floating point number, magyarul lebegőpontos szám típust jelzi. A második egy függvény, ami lebegőpontos számmá alakítja azt, ami a zárójelben van. Ha lehet. A floating szó kiejtéséhez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">for – a bejárós, vagy más néven for-ciklus első szava. Nem tudom jól lefordítani. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">get() – nem önálló parancs, hanem a szótár adattípus tagfüggvénye. Magyarul: megszerez, megkap. A szótár kulcsához tartozó értéket lehet vele megtudni, de beállítható arra is, hogyha nincs ilyen kulcs, akkor adjon vissza általunk megadott értéket a kulcshoz tartozó érték helyett. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">if – a programban a elágazás első feltételét vezeti be. Magyarul: ha. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">index() – nem önálló parancs, hanem a lista adattípus tagfüggvénye. Visszaadja a zárójelben megadott elem első előfordulásának indexét a listában. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">input() – választ vár a felhasználótól. A zárójelben elhelyezhetsz kérdést, hogy a felhasználó tudja, hogy mire kell válaszolnia. A választ érdemes változóban tárolni. Magyarul: bemenet, bemenő jel. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">insert(hova, elem) – nem önálló parancs, hanem a lista adattípus tagfüggvénye. Magyarul: beszúr. Két paramétere van, a listába az új elem-et a lista “hova” helyére szúrja be. Kiejtéshez kattints!</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">int, int() – Az első szó egy adattípus, az integer, magyarul egész szám típust jelzi. A második egy függvény, ami egész számmá alakítja azt, ami a zárójelben van. Ha lehet.</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">import – modult tölthetünk be vele. Illik a program elején szerepeltetni.</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">items() – nem önálló parancs, hanem a szótár adattípus tagfüggvénye. Magyarul: dolgok, egy felsorolás elemei. A szótár kulcs-érték párjait adja vissza, hogy for-ral bejárhassuk őket.</h5>
+              <small></small>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">list() – lista létrehozására szolgál. Magyarul: lista.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">lower() – nem önálló parancs, hanem a string adattípus tagfüggvénye. A stringet kisbetűssé alakítja. Ha eddig is kisbetűs volt, nos, annyi baj legyen! A lower case magyarul kisbetűt jelent.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">join() – nem önálló parancs, hanem a string adattípus tagfüggvénye. A zárójelben egy olyan bejárható objektumot, például listát adhatunk meg, ami további stringeket tartalmaz. A zárójelben lévő objektum stringejit úgy fűzi eggyé (azaz konkatenálja) a join, hogy közéjük az előtte szereplő stringet teszi. Például az ‘X’.join([‘alma’, ‘körte’, ‘szilva’]) eredménye almaXkörteXszilva. Magyarul: illeszt, összeforr, egybeköt, egyesít. </h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">keys() – nem önálló parancs, hanem a szótár adattípus tagfüggvénye. Magyarul: kulcsok. A szótár kulcsait adja vissza, hogy for-ral bejárhassuk őket. </h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">len() – megmondja, hogy hány elemű a zárójelben lévő lista, vagy azt, hogy hány karakteres a zárójelben lévő karakterlánc. A length, azaz hossz szóból származik, de ilyen angol szó nincs.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">map, map() -Az első szó a map (magyarul: leképez) objektumtípust jelzi, a másik egy függvény, amivel map típusú objektumok elő. A függvény két paramétert vár: az első egy másik függvény neve, a második egy bejárható objektum, például lista. A map() függvény a megadott függvényt a lista minden elemére alkalmazza. Például a map(str, [1, 2, 3]) parancs az [1, 2, 3] lista minden egyes tagjára lefuttatja az str() függvényt. </h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">max() – A zárójelben egy bejárható objektumot, például listát, vagy range-t adunk meg. A max() függvény megadja a bejárható objektumban lévő számok közül a legnagyobbat,  ha karakterláncokat vizsgálunk, akkor az ábécérendben a leghátul állót.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">min() – A zárójelben egy bejárható objektumot, például listát, vagy range-t adunk meg. A min() függvény megadja a bejárható objektumban lévő számok közül a legkisebbet,  ha karakterláncokat vizsgálunk, akkor az ábécérendben a legelöl állót.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">None – változónak adható értékül, ha semmilyen konkrét értéket nem akarunk a változóban tárolni, vagy az eddig benne tároltat óhajtjuk “kidobni”. Magyarul: semmi. </h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">open() – nem önálló parancs, hanem a fájl típus tagfüggvénye. Fájl megnyitására való. Magyarul: nyit.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">or – if vagy elif után következhet, és azt lehet vele kikötni, hogy a megadott két feltétel közül elég, ha az egyik teljesül. Magyarul: vagy.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">pop() -nem önálló parancs, hanem a lista és a szótár adattípus tagfüggvénye. Kiveszi a listából (szótárból) és visszaadja azt, ami a zárójelben van. Ha nem írunk semmit a listába, akkor a lista utolsó elemével teszi ugyanezt. Magyarul: kipattint, itt inkább kiugraszt. </h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">print() – kiírja, ami a zárójelben van. Magyarul: nyomtasd. </h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">random – ez nem parancs, hanem a véletlenszámok kezeléséhez szükséges modul neve.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">random.choice() – a zárójelben megadott bejárható objektumból választ egyet. A choice szó jelentése magyarul: választás.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">random.randint() – véletlen egész számot állíthatunk elő vele. Az alsó és a felső határt a zárójelben, vesszővel elválasztva adod meg.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">random.sample() – a zárójelben megadott bejárható objektumból választ annyit, amennyit kérünk. A kiválasztottak között nem lesz ismétlődés. A sample szó jelentése magyarul: minta.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">range, range() – Az első szó a range (magyarul: sorozat, konkrétan számsorozat) objektumtípust jelzi, a másik egy függvény, amivel range típusú objektumok, azaz számsorozatok állíthatók elő. Leggyakrabban for akármi in range(100) jellegű utasításban használjuk, a számlálós ciklus szimulálására.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">read() – nem önálló parancs, hanem a fájl típus tagfüggvénye. Fájl tartalmának egyszerre, vagy pár karakterenként történő beolvasására való. Magyarul: olvas.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">readline() – nem önálló parancs, hanem a fájl típus tagfüggvénye. Szövegfájl egy sorának beolvasására való. Magyarul: olvas sort.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">readlines() – nem önálló parancs, hanem a fájl típus tagfüggvénye. Szövegfájl sorait olvashatod be egy listába, a lista egyes elemei a szövegfájl sorai lesznek. Magyarul: olvas sortokat.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">remove() – nem önálló parancs, hanem a lista adattípus tagfüggvénye. Magyarul: eltávolít. A zárójelben megadott elem első előfordulását kiveszi a listából.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">reversed() – a zárójelben megadott listát vagy karakterláncot megfordítva adja vissza. Magyarul: megfordítva, megfordítottan.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">round(szám, tizedesjegy) – tizedesjegy pontosságra kerekíti a megadott számot. Magyarul: kerekít.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">return – függvény visszatérési értékét lehet vele megadni. Magyarul: visszatér.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">time.sleep() – a zárójelben megadott másodpercet vár a programod. Magyarul: alszik. </h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">set() – halmaz létrahozására szolgál. Magyarul: halmaz.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">sort() – nem önálló parancs, hanem a lista adattípus tagfüggvénye, és arra jó, hogy a listát helyben rendezze – azaz az a lista, amelyikre meghívod, rendezett lesz. Magyarul: rendez. Paraméterezését lásd a sorted() függvénynél.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">sorted() – a zárójelben megadott listát rendezi, és új listát ad vissza, az eredetit nem bántja. A reverse=True megadásával lehetőséged van csökkenő sorrendet kérni, és kulcsfüggvényt is adhatsz meg, amivel úgy rendezel, ahogy jól esik – részletekért lásd a rendezős postot. Magyarul: rendezett, rendezve. </h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">split() – nem önálló parancs, hanem a karakterlánc adattípus tagfüggvénye, és arra jó, hogy a zárójelben megadott határolókarakternél szétszedi a karakterláncot listává. Ha nem adunk meg semmit, akkor a whitespace karaktereknél hasít. Magyarul: hasít.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">str, str() – Az első szó a string típust jelzi. A string szónak jó sok jelentése van, például madzagot is jelent, de nekünk jobb a füzér, informatikai szövegekben pedig karakterláncnak fordítandó. A legtöbb esetben  jó, ha stringet olvasol, és szöveget gondolsz. A második szó egy függvény, ami szöveggé, karakterlánccá alakítja azt, ami a zárójelben van, ha lehet.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">strip() – nem önálló parancs, hanem a karakterlánc adattípus tagfüggvénye. A karakterlánc elejéről és végéről lepusztítja a zárójelben megadott karaktereket. Ha nem adunk meg semmit, akkor a whitespace-karaktereket takarítja le, azaz a szóközt, tabulátort, soremelést, kocsivisszát. Magyarul: megfoszt, lemeztelenít. A whitespace magyarul fehér helyet jelent, de soha nem szoktuk lefordítani.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">sum() – A zárójelben egy bejárható objektumot, például listát, vagy range-t adunk meg. A sum() függvény megadja a bejárható objektumban lévő számok összegét. Magyarul: összeg.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">True – a bool adattípus egyik lehetséges értéke. Magyarul: igaz. Mindig nagybetűvel kezdjük.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">update() – nem önálló parancs, hanem a szótár adattípus tagfüggvénye. Magyarul: frissít. Létező szótár értékeit frissíthetjük vele.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">upper() – nem önálló parancs, hanem a karakterlánc adattípus tagfüggvénye. A karakterlánc NAGYBETŰS változatát adja vissza. Az upper case szó jelentése magyarul: nagybetű.</h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1 breadcrumb-item text-primary active" aria-current="page">values() – nem önálló parancs, hanem a szótár adattípus tagfüggvénye. Magyarul: értékek. A szótár értékeit adja vissza, hogy for-ral bejárhassuk őket. </h5>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">while – a róla elnevezett while-ciklus első szava. Addig ismétlődik a ciklus, amíg a while után megfogalmazott feltétel teljesül. Magyarul: amíg.</h5>
+            </div>
+        </a>
+      </div>
+
+      <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Elérhetőség</h4>
+                    <h2 class="text-primary mb-4"><img class="orokosilogo" src="./img/logo.png" alt="">Örökösi Vajdák</h2>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>4400 Nyíregyháza, Örökösföld Fazekas János tér</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+0670</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>orokosivajdak@cegesemail.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    </form>
+                    <h6 class="text-white mt-4 mb-3">Kövesse a Python-t</h6>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/javasad.js"></script>
+</body>
+
+</html>
